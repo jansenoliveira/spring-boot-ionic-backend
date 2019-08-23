@@ -9,3 +9,4 @@ import com.jansen.cursomc.domain.Categoria;
 public interface CategoriaRepository extends JpaRepository<Categoria, Integer> {
 
 }
+
