@@ -9,4 +9,3 @@ import com.jansen.cursomc.domain.Produto;
 public interface ProdutoRepository extends JpaRepository<Produto, Integer> {
 
 }
-
