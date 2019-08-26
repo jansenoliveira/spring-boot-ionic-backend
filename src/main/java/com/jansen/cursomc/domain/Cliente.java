@@ -1,6 +1,7 @@
 package com.jansen.cursomc.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -28,7 +29,7 @@ public class Cliente implements Serializable {
 	private Integer tipo;
 	
 	@OneToMany(mappedBy = "cliente")
-	private List<Endereco> enderecos;
+	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection
 	@CollectionTable(name="TELEFONE")
