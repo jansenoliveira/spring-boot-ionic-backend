@@ -89,7 +89,7 @@ public class Pedido implements Serializable {
 	public void setEnderecoDeEntrega(Endereco enderecoDeEntrega) {
 		this.enderecoDeEntrega = enderecoDeEntrega;
 	}
-<<<<<<< HEAD
+
 	
 	public Set<ItemPedido> getItens() {
 		return itens;
@@ -98,8 +98,6 @@ public class Pedido implements Serializable {
 	public void setItens(Set<ItemPedido> itens) {
 		this.itens = itens;
 	}
-=======
->>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 
 	@Override
 	public int hashCode() {
@@ -125,11 +123,7 @@ public class Pedido implements Serializable {
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 	
 	
 }
