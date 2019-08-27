@@ -13,7 +13,10 @@ import com.jansen.cursomc.domain.Cidade;
 import com.jansen.cursomc.domain.Cliente;
 import com.jansen.cursomc.domain.Endereco;
 import com.jansen.cursomc.domain.Estado;
+<<<<<<< HEAD
 import com.jansen.cursomc.domain.ItemPedido;
+=======
+>>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 import com.jansen.cursomc.domain.Pagamento;
 import com.jansen.cursomc.domain.PagamentoComBoleto;
 import com.jansen.cursomc.domain.PagamentoComCartao;
@@ -26,7 +29,10 @@ import com.jansen.cursomc.repositories.CidadeRepository;
 import com.jansen.cursomc.repositories.ClienteRepository;
 import com.jansen.cursomc.repositories.EnderecoRepository;
 import com.jansen.cursomc.repositories.EstadoRepository;
+<<<<<<< HEAD
 import com.jansen.cursomc.repositories.ItemPedidoRepository;
+=======
+>>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 import com.jansen.cursomc.repositories.PagamentoRepository;
 import com.jansen.cursomc.repositories.PedidoRepository;
 import com.jansen.cursomc.repositories.ProdutoRepository;
@@ -50,8 +56,11 @@ public class CursomcApplication implements CommandLineRunner {
 	private PedidoRepository pedidoRepository;
 	@Autowired
 	private PagamentoRepository pagamentoRepository;
+<<<<<<< HEAD
 	@Autowired
 	private ItemPedidoRepository itemPedidoRepository;
+=======
+>>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursomcApplication.class, args);

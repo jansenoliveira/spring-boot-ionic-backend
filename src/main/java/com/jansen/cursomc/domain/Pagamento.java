@@ -86,4 +86,9 @@ public abstract class Pagamento implements Serializable {
 		return true;
 	}
 
+<<<<<<< HEAD
+=======
+	
+	
+>>>>>>> 49916dda6c3cacf21b43f59508c6ebe61bc797ed
 }
