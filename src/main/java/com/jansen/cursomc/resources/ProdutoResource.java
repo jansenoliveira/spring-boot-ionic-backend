@@ -27,7 +27,6 @@ public class ProdutoResource {
 	public ResponseEntity<Produto> find(@PathVariable Integer id) {
 
 		Produto obj = service.find(id);
-
 		return ResponseEntity.ok(obj);
 	}
 	
@@ -48,7 +47,4 @@ public class ProdutoResource {
 		return ResponseEntity.ok().body(listDto);
 	}
 	
-	
-	
-
 }
