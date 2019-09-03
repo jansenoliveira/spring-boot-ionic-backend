@@ -38,8 +38,8 @@ public class ProdutoService {
 		
 	}
 	
-//	public List<Produto> findAll(){
-//		return repo.findAll();
-//	}
+	public List<Produto> findAll(){
+		return repo.findAll();
+	}
 
 }

@@ -30,7 +30,7 @@ public class ProdutoResource {
 		return ResponseEntity.ok(obj);
 	}
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value = "/page", method=RequestMethod.GET)
 	public ResponseEntity<Page<ProdutoDTO>> findPage(
 			@RequestParam(value="nome", defaultValue="") String nome, 
 			@RequestParam(value="categorias", defaultValue="") String categorias, 
@@ -45,6 +45,15 @@ public class ProdutoResource {
 		Page<Produto> list = service.search(nomeDecoded, ids, page, linesPerPage, orderBy, direction);
 		Page<ProdutoDTO> listDto = list.map(obj -> new ProdutoDTO(obj));  
 		return ResponseEntity.ok().body(listDto);
+	}
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public ResponseEntity<List<Produto>> findAll() {
+		List<Produto> list = service.findAll();
+//		List<ProdutoDTO> listDTO = list.stream()
+//				.map(obj -> new ProdutoDTO(obj))
+//				.collect(Collectors.toList()); //convertendo uma lista de categorias com produtos, em uma lista somente com os nomes e id da categoria
+		return ResponseEntity.ok(list);
 	}
 	
 }
