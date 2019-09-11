@@ -2,6 +2,7 @@ package com.jansen.cursomc.services;
 
 import org.springframework.mail.SimpleMailMessage;
 
+import com.jansen.cursomc.domain.Cliente;
 import com.jansen.cursomc.domain.Pedido;
 
 public interface EmailService {
@@ -14,5 +15,5 @@ public interface EmailService {
 //
 //	void sendHtmlEmail(MimeMessage msg);
 
-//	void sendNewPasswordEmail(Cliente cliente, String msg);
+	void sendNewPasswordEmail(Cliente cliente, String msg);
 }
